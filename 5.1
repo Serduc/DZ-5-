@@ -1,0 +1,8 @@
+text = 'Наступилабв осень,сабвмое ненастное время годаабв.  Пожухлая трабвва прибитабв первыми заморозками'
+   
+def del_words (text):
+    text = list(filter(lambda x: 'абв' not in x, text.split()))
+    return " ".join(text)
+
+text = del_words(text)
+print(text)
